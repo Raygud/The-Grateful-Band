@@ -1,0 +1,335 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+nav {
+  position: relative;
+  height: 50px;
+  background-color: violet;
+}
+
+nav img {
+  position: absolute;
+  height: 100%;
+}
+
+nav ul {
+  line-height: 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+
+nav ul li {
+  background-color: snow;
+  text-align: center;
+  width: 200px;
+  line-height: 50px;
+}
+
+nav ul li:hover ul {
+  height: 165px;
+}
+
+nav ul li ul {
+  position: absolute;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  transition: 600ms ease-in-out;
+}
+
+nav ul li ul a li {
+  margin-bottom: 1px;
+  line-height: 40px;
+  background-color: steelblue;
+}
+
+@media (max-width: 375px) {
+  body {
+    overflow: hidden;
+  }
+  nav {
+    background-color: #343434;
+  }
+  nav ul {
+    display: none;
+  }
+  nav i {
+    position: absolute;
+    right: 6px;
+    bottom: 6px;
+    font-size: 40px;
+    transform: rotatez(90deg);
+    color: white;
+    transition: 500ms ease-in-out;
+    z-index: 2;
+  }
+}
+
+#SideDrop {
+  position: absolute;
+  left: 101%;
+  height: 425px;
+  width: 100%;
+  background-color: #343434;
+  overflow: hidden;
+  transition: 500ms ease-in-out;
+  z-index: 1;
+}
+
+#SideDrop ul {
+  display: block;
+}
+
+#SideDrop ul li {
+  font-size: 55px;
+  margin: auto;
+  margin-top: 35px;
+  text-align: left;
+  background-color: #343434;
+}
+
+#SideDrop ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#SideDrop #SideDropIcon {
+  position: sticky;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html,
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  color: #2e3738;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+#Hjem {
+  background-image: url(/Assets/Media/Imgs/pexels-brett-sayles-1309240.jpg);
+  height: 100vw;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+}
+
+#Hjem h2 {
+  padding-top: 155px;
+  color: white;
+  text-shadow: 1px 1px 20px white;
+}
+
+.item1 {
+  grid-area: M1;
+}
+
+.item2 {
+  grid-area: M2;
+}
+
+.item3 {
+  grid-area: M3;
+}
+
+.item4 {
+  grid-area: M4;
+}
+
+.grid-OmOs {
+  display: grid;
+  grid-template-areas: 'M1' 'M2' 'M3' 'M4';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-OmOs div {
+  position: relative;
+  width: 100%;
+  max-height: 300px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.grid-OmOs div h4 {
+  position: absolute;
+  font-size: 23px;
+  bottom: 90px;
+  border-bottom: solid white;
+  left: 10px;
+  color: rgba(255, 255, 255, 0.975);
+}
+
+.grid-OmOs div p {
+  position: absolute;
+  font-size: 20px;
+  bottom: 15px;
+  left: 10px;
+  color: rgba(255, 255, 255, 0.975);
+}
+
+.item5, .item6, .item7, .item8, #KontaktSide {
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+.item5 {
+  grid-area: K1;
+  background-image: url(/Assets/Media/Imgs/Venues/1.jpeg);
+}
+
+.item6 {
+  grid-area: K2;
+  background-image: url(/Assets/Media/Imgs/Venues/2.jpeg);
+}
+
+.item7 {
+  grid-area: K3;
+  background-image: url(/Assets/Media/Imgs/Venues/3.jpeg);
+}
+
+.item8 {
+  grid-area: K4;
+  background-image: url(/Assets/Media/Imgs/Venues/4.jpeg);
+}
+
+.grid-Koncerter {
+  display: grid;
+  grid-template-areas: 'K1' 'K2' 'K3' 'K4';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-Koncerter div {
+  color: white;
+  position: relative;
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.grid-Koncerter div h4 {
+  position: absolute;
+  bottom: 14px;
+  border-bottom: solid white;
+  left: 60px;
+  text-shadow: 5px 5px 5px black;
+}
+
+.title {
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-size: 40px;
+  width: 100%;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #2d2d2d;
+  word-break: break-all;
+  text-shadow: 0px 0px 0px white;
+}
+
+#KontaktSide {
+  background-image: url(/Assets/Media/Imgs/pexels-jc-siller-8634867.jpg);
+  height: 310px;
+}
+
+#KontaktSide form {
+  color: white;
+  width: 80%;
+  background-color: #3c3c3c;
+  margin: auto;
+  border-style: solid;
+  border-color: #fffefd1b;
+}
+
+#KontaktSide form p {
+  font-size: 13px;
+}
+
+#KontaktSide form h4 {
+  font-size: 20px;
+}
+
+h1 {
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+h1 #left {
+  position: absolute;
+  left: -30vw;
+  animation: leftt 1s;
+  animation-fill-mode: forwards;
+}
+
+h1 #right {
+  position: absolute;
+  right: -30vw;
+  animation: rightt 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes leftt {
+  0% {
+    left: -30vw;
+  }
+  50% {
+    letter-spacing: -7px;
+  }
+  100% {
+    left: 31.5vw;
+  }
+}
+
+@keyframes rightt {
+  0% {
+    right: -30vw;
+  }
+  50% {
+    letter-spacing: -7px;
+  }
+  100% {
+    right: 31.5vw;
+  }
+}
+/*# sourceMappingURL=Main.css.map */

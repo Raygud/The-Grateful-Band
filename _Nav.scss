@@ -1,0 +1,104 @@
+$Heigther: 50px;
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+nav {
+    position: relative;
+    height: $Heigther;
+    background-color: violet;
+    img{
+        position: absolute;
+        height: 100%;
+    }
+    ul{
+        line-height: $Heigther;
+        display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-evenly;
+        li{
+            background-color: snow;
+            text-align: center;
+            width: 200px;
+            line-height: $Heigther;
+
+            &:hover ul {
+                height: 165px;
+            }
+            ul{
+                position: absolute;
+                display: block;
+                height: 0;
+                overflow: hidden;
+                transition: 600ms ease-in-out;
+                a{ 
+                    
+                    li{
+                        margin-bottom: 1px;
+                        line-height: 40px;
+                        background-color: steelblue;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    body{
+        overflow: hidden;
+    }  
+    nav{
+        background-color: rgb(52, 52, 52);
+        ul{
+            display: none;
+        }
+        i{
+            position: absolute;
+            right: 6px;
+            bottom: 6px;
+            font-size: 40px;
+            transform: rotatez(90deg);
+            color: white;
+            transition: 500ms ease-in-out;
+            z-index: 2;
+        }
+    }
+    }
+
+    #SideDrop{
+        position: absolute;
+        left: 101%;
+        height: 425px;
+        width: 100%;
+        background-color: rgb(52, 52, 52);
+        overflow: hidden;
+        transition: 500ms ease-in-out;
+        z-index: 1;
+        ul{
+            display: block;
+            
+            li{
+                font-size: 55px;
+                margin: auto;
+                margin-top: 35px;
+                text-align: left;
+                background-color: rgb(52, 52, 52);
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+        }
+    }
+
+    #SideDropIcon{
+        position: sticky;
+    }
+}
+

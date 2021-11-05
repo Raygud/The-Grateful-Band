@@ -1,0 +1,231 @@
+@import './Nav';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+$parallax-height: 100vh;
+$center-margin: 0px auto;
+
+@mixin background-size($size) {
+	background-size: cover;
+	-webkit-background-size:cover;
+	-moz-background-size:cover;
+	-o-background-size:cover;
+}
+
+@mixin parallax-background($file){
+	background:url($file) no-repeat center center fixed;
+	@include background-size(cover);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+img{
+    width: 100%;
+}
+
+a{text-decoration: none;
+color: inherit;}
+
+html,
+body {
+    width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  color: #2e3738;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+
+#Hjem{
+    background-image: url(/Assets/Media/Imgs/pexels-brett-sayles-1309240.jpg);
+    height: 100vw;
+    @include background-size(cover);
+    text-align: center;
+    h2{
+    padding-top: 155px;
+    color: white;
+    text-shadow: 1px 1px 20px rgb(255, 255, 255);
+    }
+}
+
+.item1 {
+    grid-area: M1;
+  }
+  .item2 {
+    grid-area: M2;
+  }
+  .item3 {
+    grid-area: M3;
+  }
+  .item4 {
+    grid-area: M4;
+  }
+
+
+.grid-OmOs{
+    display: grid;
+  grid-template-areas: 'M1'
+                       'M2'
+                       'M3'
+                       'M4';
+  grid-gap: 10px;
+  padding: 10px;
+    div{
+        position: relative;
+        width: 100%;
+        max-height: 300px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  overflow: hidden;
+  text-align: left;
+  h4{
+      position: absolute;
+      font-size: 23px;
+      bottom: 90px;
+      border-bottom: solid white;
+      left: 10px;
+      color: rgba(255, 255, 255, 0.975);
+      
+  }
+  p{
+    position: absolute;
+    font-size: 20px;
+    bottom: 15px;
+    left: 10px;
+    color: rgba(255, 255, 255, 0.975);
+}
+  
+    }
+}
+
+.item5,.item6,.item7,.item8,#KontaktSide{
+    @include background-size(cover)
+}
+
+.item5 {
+    grid-area: K1;
+    background-image: url(/Assets/Media/Imgs/Venues/1.jpeg);
+  }
+  .item6 {
+    grid-area: K2;
+    background-image: url(/Assets/Media/Imgs/Venues/2.jpeg);
+
+  }
+  .item7 {
+    grid-area: K3;
+    background-image: url(/Assets/Media/Imgs/Venues/3.jpeg);
+
+  }
+  .item8 {
+    grid-area: K4;
+    background-image: url(/Assets/Media/Imgs/Venues/4.jpeg);
+
+  }
+
+.grid-Koncerter{
+    display: grid;
+  grid-template-areas: 'K1'
+                       'K2'
+                       'K3'
+                       'K4';
+  grid-gap: 10px;
+  padding: 10px;
+    div{
+        color: white;
+        position: relative;
+        width: 100%;
+        height: 300px;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  overflow: hidden;
+  text-align: left;
+  h4{
+      position: absolute;
+      bottom: 14px;
+      border-bottom: solid white;
+      left: 60px;
+      text-shadow: 5px 5px 5px black;
+  }
+    }}
+
+
+    .title{
+        color: rgb(255, 255, 255);
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 40px;
+        width: 100%;
+        height: 100px;
+        
+        line-height: 100px;
+        text-align: center;
+        vertical-align: middle;
+        background-color: rgb(45, 45, 45);
+        word-break: break-all;
+        text-shadow: 0px 0px 0px rgb(255, 255, 255);
+        
+    }
+#KontaktSide{
+    background-image: url(/Assets/Media/Imgs/pexels-jc-siller-8634867.jpg);
+    height: 310px;
+    form{
+        color: white;
+        width: 80%;
+        background-color: rgb(60, 60, 60);
+        margin: auto;
+border-style: solid;
+border-color: #fffefd1b;        
+        p{
+            font-size: 13px;
+        }
+        h4{
+            font-size: 20px;
+            
+        }
+    }
+    
+}
+
+
+
+h1{
+    position: relative;
+    color: white;
+    text-align: center;
+    #left{
+        position: absolute;
+        left: -30vw;
+        animation: leftt 1s;
+        animation-fill-mode: forwards;
+
+    }
+    #right{
+        position: absolute;
+        right: -30vw;
+        animation: rightt 1s;
+        animation-fill-mode: forwards;
+    }
+}
+
+
+
+@keyframes leftt{
+    0% {left: -30vw;}
+    50% {letter-spacing: -7px;}
+    100% { left: 31.5vw;}
+}
+
+@keyframes rightt{
+    0% {right: -30vw;}
+    50% {letter-spacing: -7px;}
+    100% { right: 31.5vw;}
+}

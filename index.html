@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Main.css">
+    <script src="https://kit.fontawesome.com/7c99c3d6dc.js" crossorigin="anonymous"></script>
+    <script src="/Script.js" defer></script>
+    <title>The Grateful Band</title>
+</head>
+<body onscroll="scrolled()"> 
+<head>
+
+    <nav> 
+        <h1>  <span id="left"> Greatful</span> <span id="right">Band</span> </h1>
+        <div id="SideDrop">
+            <ul>
+                <li>
+                    <a onclick="DropDownSideClose()" href="#hjem">Hjem</a> 
+                </li>
+                <li>
+                   <a onclick="DropDownSideClose()" href="#OmOs">Om os</a> 
+                </li>
+                <li>
+                    <a onclick="DropDownSideClose()" href="#KommendeKoncerter">Koncerter</a> 
+                </li>
+                <li>
+                    <a onclick="DropDownSideClose()" href="#KontaktSide">Kontakt</a> 
+                </li>
+            </ul>
+        </div>
+        <ul>
+            <li>
+                <a href="#">Hjem</a> 
+            </li>
+            <li>
+               <a href="#">Om os</a> 
+            </li>
+            <li>
+                <a href="#">Kommende Koncerter</a> 
+            </li>
+            <li>
+                <a href="#">Kontakt</a> 
+            </li>
+        </ul>
+        <i id="SideDropIcon" class="fas fa-caret-square-down" onclick="DropDownSide()"></i>
+    </nav>
+
+    <div id="Hjem">
+        <h2>Greatful Band <br> Next Show: 03/05, <a target="blank" href="https://www.google.com/maps/dir//musikkens+hus/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x4649329366cdc0e5:0xecc28849848fc5fd?sa=X&ved=2ahUKEwiz-ZWc-ID0AhXaQfEDHd2nBf0Q9Rd6BAhgEAU"> Musikkens hus </a></h2>
+      </div>
+    
+      <div id="OmOs">
+        <h2 class="title">Om Os</h2>
+        <div>
+            <div class="grid-OmOs">
+                <div class="item1"><img src="/Assets/Media/Imgs/Members/1.jpeg" alt="">
+                <h4>Fabien Pich <br> Lead vocal
+                </h4>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, corporis.</p>
+            </div>
+                <div class="item2"><img src="/Assets/Media/Imgs/Members/2.jpeg" alt="">
+                    <h4>Robert Eero <br> Guitar
+                    </h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, corporis.</p>
+                </div>
+                <div class="item3"><img src="/Assets/Media/Imgs/Members/3.jpeg" alt="">
+                    <h4>Kondrat Göran <br> Drums
+                    </h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, corporis.</p>
+                </div>
+                <div class="item4"><img src="/Assets/Media/Imgs/Members/4.jpeg" alt="">
+                    <h4>Kazimir Theo <br> Bass
+                    </h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, corporis.</p>
+                </div>
+              </div>
+        </div>
+      </div>
+
+      <div id="KommendeKoncerter">
+        <h2 class="title">Kommende Koncerter<h2>
+
+<div class="grid-Koncerter">
+    <div class="item5">Location: Musikkens hus, Aalborg <br> Date:03/05 <h4>KØB BILLETTER!</h4></div>
+    <div class="item6">Location: Musikkens hus, Aarhus <br> Date:03/05<h4>KØB BILLETTER!</h4></div>
+    <div class="item7">Location: Musikkens hus, København <br> Date:03/05<h4>KØB BILLETTER!</h4></div>
+    <div class="item8">Location: Musikkens hus, Skive <br> Date:03/05<h4>KØB BILLETTER!</h4></div>
+  </div>
+      </div>
+      
+      <div id="KontaktSide">
+        <h2 class="title">Kontakt<h2>
+            <form action="">
+                <h4>Gå ikke glip af næste koncert!</h4>
+                <p>Være den første at køb billetter og få % af,</p>
+                <input placeholder=" Email" type="email" id="Email" name="Email" minlength="5" required>
+                <button>Vær først!</button>
+                <input placeholder=" Navn" type="text" id="Navn" name="Navn" required>
+            </form>
+      </div>
+
+</head>
+
+</body>
+</html>
